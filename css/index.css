@@ -101,8 +101,8 @@ h3 {
   text-align: center;
 }
 .frases .frase1 {
-  display: flex;
   background-image: url(../img/ocaso-mar.jpg);
+  display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -113,8 +113,8 @@ h3 {
   text-shadow: 4px 4px 5px black;
 }
 .frases .frase4 {
-  display: flex;
   background-image: url(../img/camino.jpg);
+  display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -125,18 +125,16 @@ h3 {
   text-shadow: 4px 4px 5px black;
 }
 .frases .frase5 {
-  display: flex;
   background-image: url(../img/montaña.jpg);
+  display: flex;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
   border-radius: 10px;
-  margin-bottom: 20px;
   align-items: center;
   color: white;
   text-shadow: 4px 4px 5px black;
-  text-align: center;
 }
 
 /* Quines Somos se utiliza boostrap */
@@ -280,12 +278,13 @@ footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 100%;
   text-shadow: 7px 4px 5px rgba(0, 0, 0, 0.747);
+  margin-top: 20px;
 }
 footer .piedePaginaRedes {
   text-align: center;
   margin-top: -30px;
   padding-bottom: 50px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 footer .piedePaginaRedes p {
   margin-top: 10px;

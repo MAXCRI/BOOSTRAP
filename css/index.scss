@@ -18,24 +18,23 @@ nav{
     background-image: url(../img/cabecera.jpg);
     background-size: cover;
     padding: 1% !important;
-
-.logo{
-    width: 40%;
-}
-.btn-info{
-    background-color:$colorweb1 ;
-    color: rgba(255, 255, 255, 0.895);
-    box-shadow: $boxsombra;
-}
-.navbar-collapse{
-    text-align: center;
-}
-.nav-item{
-    padding: 2px;
-}
-.navbar-toggler{
-    background-color:$colorweb1 ;
-}
+    .logo{
+        width: 40%;
+    }
+    .btn-info{
+        background-color:$colorweb1 ;
+        color: rgba(255, 255, 255, 0.895);
+        box-shadow: $boxsombra;
+    }
+    .navbar-collapse{
+        text-align: center;
+    }
+    .nav-item{
+        padding: 2px;
+    }
+    .navbar-toggler{
+        background-color:$colorweb1 ;
+    }
 }
 
 //fin de cabezera y menu
@@ -113,50 +112,36 @@ h3{
     font-size: 180%;
     text-align: center;
 
-.frase1{
-    display: flex;
-    background-image: url(../img/ocaso-mar.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
-    border-radius: 10px;
-    align-items: center;
-    color: white;
-    text-shadow: $sombratexto;
-}
+    //Se aplica otro mixin para evitar repetir mas codigo
 
-.frase4{
-    display: flex;
-    background-image: url(../img/camino.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
-    border-radius: 10px;
-    align-items: center;
-    color: white;
-    text-shadow: $sombratexto;
-}
-.frase5{
-    display: flex;
-    background-image: url(../img/montaña.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
-    border-radius: 10px;
-    margin-bottom: 20px;
-    align-items: center;
-    color: white;
-    text-shadow: $sombratexto;
-    text-align: center;
-}
+    @mixin frases {
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
+        border-radius: 10px;
+        align-items: center;
+        color: white;
+        text-shadow: $sombratexto;
+    }
+    .frase1{
+        background-image: url(../img/ocaso-mar.jpg);
+        @include frases();
+    }
+    .frase4{
+        background-image: url(../img/camino.jpg);
+        @include frases();
+    }
+    .frase5{
+        background-image: url(../img/montaña.jpg);
+        @include frases();
+    }
 }
 
 /* Quines Somos se utiliza boostrap */
-.rostro1 {
-    background-image: url(../img/testimonio1.jpg);
+// Se aplica un mixin a los testimonios
+@mixin rostro {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 150%;
@@ -166,30 +151,20 @@ h3{
     text-align: center;
     line-height: 120px;
     margin-right: 10px;
+}
+
+.rostro1 {
+    background-image: url(../img/testimonio1.jpg);
+    @include rostro();
+
 }
 .rostro2 {
     background-image: url(../img/testimonio2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 150%;
-    border-radius: 100%;
-    height: 120px;
-    width: 120px;
-    text-align: center;
-    line-height: 120px;
-    margin-right: 10px;
+    @include rostro();
 }
 .rostro3 {
     background-image: url(../img/testimonio4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 150%;
-    border-radius: 100%;
-    height: 120px;
-    width: 120px;
-    text-align: center;
-    line-height: 120px;
-    margin-right: 10px;
+    @include rostro();
 }
 
 .video{
@@ -226,15 +201,14 @@ table{
     width: 100%;
     background-color: white;
     text-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
-
-th,td{
-    border: solid 2px;
-    padding: 20px;
-}
-thead{
-    border: solid 2px;
-    background-color:$colorweb1 ;
-}
+    th,td{
+        border: solid 2px;
+        padding: 20px;
+    }
+    thead{
+        border: solid 2px;
+        background-color:$colorweb1 ;
+    }
 }
 
 /* GALERIA se implementa un carrusel con boostrap */
@@ -276,6 +250,7 @@ thead{
     padding: 10px;
 }
 /* Se agrega Gradiente */ //comienza footer
+
 footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image:linear-gradient(to left, rgba(255, 255, 255, 0.464),rgba(255, 255, 255, 0.003)), url(../img/cabecera.jpg);
@@ -287,21 +262,21 @@ footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 100%;
     text-shadow: 7px 4px 5px rgba(0, 0, 0, 0.747);
-
-.piedePaginaRedes{
-    text-align: center;
-    margin-top: -30px;
-    padding-bottom: 50px;
-    padding-top: 10px;
-}
-.piedePaginaRedes p{
-    margin-top: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    color:rgba(0, 0, 0, 0.638);
-    text-shadow: 3px 3px 5px rgb(137, 137, 247);
-    font-size: 20px;
-}
+    margin-top: 20px;
+    .piedePaginaRedes{
+        text-align: center;
+        margin-top: -30px;
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    .piedePaginaRedes p{
+        margin-top: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        color:rgba(0, 0, 0, 0.638);
+        text-shadow: 3px 3px 5px rgb(137, 137, 247);
+        font-size: 20px;
+    }
 }
 //finaliza footer
 
