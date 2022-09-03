@@ -3,14 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #65fbd334;
-}
+
 //Se agregan varialbles para los colores y sombras
 
 $colorweb1:rgba(137, 137, 247, 0.647); //color central de la web
 $sombratexto:4px 4px 5px black;        //color de sombra de textos
 $boxsombra:7px 4px 5px rgba(0, 0, 0, 0.466); //sombras en bordes 
+$bodycolor:#65fbd334; //color body
+
+body{
+    background-color:$bodycolor;
+}
 
 /*Menu con Boostrap*/ //Inicio de cabezera y menu
 nav{
@@ -141,7 +144,9 @@ h3{
 
 /* Quines Somos se utiliza boostrap */
 // Se aplica un mixin a los testimonios
+
 @mixin rostro {
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 150%;
@@ -168,7 +173,6 @@ h3{
 }
 
 .video{
-    background-color: white;
     height: 500px;
     text-align: center;
     padding-top: 60px;

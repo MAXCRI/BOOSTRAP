@@ -140,6 +140,7 @@ h3 {
 /* Quines Somos se utiliza boostrap */
 .rostro1 {
   background-image: url(../img/testimonio1.jpg);
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 150%;
@@ -153,6 +154,7 @@ h3 {
 
 .rostro2 {
   background-image: url(../img/testimonio2.jpg);
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 150%;
@@ -166,6 +168,7 @@ h3 {
 
 .rostro3 {
   background-image: url(../img/testimonio4.jpg);
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 150%;
@@ -178,7 +181,6 @@ h3 {
 }
 
 .video {
-  background-color: white;
   height: 500px;
   text-align: center;
   padding-top: 60px;
