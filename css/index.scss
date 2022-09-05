@@ -277,9 +277,9 @@ footer{
         margin-top: 10px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bolder;
-        color:rgba(0, 0, 0, 0.638);
-        text-shadow: 3px 3px 5px rgb(137, 137, 247);
-        font-size: 20px;
+        color:$boxsombra;
+        text-shadow:$colorweb1;
+        font-size: 18px;
     }
 }
 //finaliza footer

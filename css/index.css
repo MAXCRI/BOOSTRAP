@@ -292,9 +292,9 @@ footer .piedePaginaRedes p {
   margin-top: 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bolder;
-  color: rgba(0, 0, 0, 0.638);
-  text-shadow: 3px 3px 5px rgb(137, 137, 247);
-  font-size: 20px;
+  color: 7px 4px 5px rgba(0, 0, 0, 0.466);
+  text-shadow: rgba(137, 137, 247, 0.647);
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 984px) {
