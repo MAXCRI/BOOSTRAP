@@ -136,6 +136,54 @@ h3 {
   color: white;
   text-shadow: 4px 4px 5px black;
 }
+.frases .frase2 {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
+  border-radius: 10px;
+  align-items: center;
+  color: white;
+  text-shadow: 4px 4px 5px black;
+  color: #0c0909;
+  box-shadow: none;
+}
+.frases .frase3 {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
+  border-radius: 10px;
+  align-items: center;
+  color: white;
+  text-shadow: 4px 4px 5px black;
+  color: #0c0909;
+  box-shadow: none;
+}
+.frases .frase6 {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
+  border-radius: 10px;
+  align-items: center;
+  color: white;
+  text-shadow: 4px 4px 5px black;
+  color: #0c0909;
+  box-shadow: none;
+}
+.frases .frase1 p {
+  display: none;
+}
+.frases .frase4 p {
+  display: none;
+}
+.frases .frase5 p {
+  display: none;
+}
 
 /* Quines Somos se utiliza boostrap */
 .rostro1 {
@@ -219,7 +267,7 @@ table {
 }
 table th, table td {
   border: solid 2px;
-  padding: 20px;
+  padding: 10px;
 }
 table thead {
   border: solid 2px;
@@ -341,15 +389,6 @@ footer .piedePaginaRedes p {
   header {
     grid-template-columns: repeat(1, 1fr);
   }
-  .frase2 {
-    display: none;
-  }
-  .frase3 {
-    display: none;
-  }
-  .frase6 {
-    display: none;
-  }
   .galeria {
     grid-template-columns: repeat(1, 1fr);
     width: 100%;
@@ -401,6 +440,51 @@ footer .piedePaginaRedes p {
   .carrusel {
     height: 300px;
   }
+  .frases .frase2 {
+    display: none;
+  }
+  .frases .frase3 {
+    display: none;
+  }
+  .frases .frase6 {
+    display: none;
+  }
+  .frases .frase1 p {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    box-shadow: none;
+  }
+  .frases .frase4 p {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    box-shadow: none;
+  }
+  .frases .frase5 p {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
+    border-radius: 10px;
+    align-items: center;
+    color: white;
+    text-shadow: 4px 4px 5px black;
+    box-shadow: none;
+  }
 }
 @media only screen and (max-width: 772px) {
   h1 {
@@ -409,6 +493,21 @@ footer .piedePaginaRedes p {
   .carrusel {
     height: 400px;
   }
+  .cursoTalleres {
+    font-size: 15px;
+    padding: 0;
+    margin: 0, auto;
+    width: 100%;
+  }
+  .tablaDuracionOculta {
+    display: none;
+  }
+  table th, td {
+    padding: 5px;
+  }
+  .menuPaginaTalleres {
+    position: absolute;
+  }
 }
 @media only screen and (max-width: 400px) {
   h1 {
@@ -416,6 +515,9 @@ footer .piedePaginaRedes p {
   }
   .carrusel {
     height: 200px;
+  }
+  .table .th .td {
+    padding: 5px, !important;
   }
 }
 @media only screen and (max-width: 302px) {

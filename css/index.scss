@@ -128,6 +128,9 @@ h3{
         color: white;
         text-shadow: $sombratexto;
     }
+    @mixin fraseoculta {
+        display: none;
+    }
     .frase1{
         background-image: url(../img/ocaso-mar.jpg);
         @include frases();
@@ -139,6 +142,30 @@ h3{
     .frase5{
         background-image: url(../img/montaña.jpg);
         @include frases();
+    }
+    .frase2{
+        @include frases();
+        color:#0c0909;
+        box-shadow:none;
+    }
+    .frase3{
+        @include frases();
+        color:#0c0909;
+        box-shadow:none;
+    }
+    .frase6{
+        @include frases();
+        color:#0c0909;
+        box-shadow:none;
+    }
+    .frase1 p{
+        @include fraseoculta();
+    }
+    .frase4 p{
+        @include fraseoculta();
+    }
+    .frase5 p{
+        @include fraseoculta();
     }
 }
 
@@ -207,7 +234,7 @@ table{
     text-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
     th,td{
         border: solid 2px;
-        padding: 20px;
+        padding:10px;
     }
     thead{
         border: solid 2px;
@@ -331,15 +358,6 @@ footer{
     header{
         grid-template-columns: repeat(1,1fr);
     }
-    .frase2{
-        display: none;
-    }
-    .frase3{
-        display: none;
-    }
-    .frase6{
-        display: none;
-    }
     .galeria{
         grid-template-columns:repeat(1, 1fr);
         width: 100%;
@@ -391,6 +409,41 @@ footer{
     .carrusel{
         height: 300px;
     }
+    @mixin frases {
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
+        border-radius: 10px;
+        align-items: center;
+        color: white;
+        text-shadow: $sombratexto;
+    }
+    @mixin fraseoculta {
+        display: none;
+    }
+    .frases .frase2{
+        @include fraseoculta();
+    }
+    .frases .frase3{
+        @include fraseoculta();
+    }
+    .frases .frase6{
+        @include fraseoculta();
+    }
+    .frases .frase1 p{
+        @include frases();
+        box-shadow: none;
+    }
+    .frases .frase4 p{
+        @include frases();
+        box-shadow: none;
+    }
+    .frases .frase5 p{
+        @include frases();
+        box-shadow: none;
+    }
 }
 @media only screen and (max-width:772px){
     h1{
@@ -399,6 +452,21 @@ footer{
     .carrusel{
         height: 400px;
     }
+    .cursoTalleres{
+        font-size: 15px;
+        padding:0;
+        margin: 0, auto;
+        width:100%;
+    }
+    .tablaDuracionOculta{
+        display: none;
+    }
+    table th,td{
+        padding:5px
+    }
+    .menuPaginaTalleres{
+        position:absolute
+    }
     }
     @media only screen and (max-width:400px){
         h1{
@@ -406,6 +474,9 @@ footer{
         }
         .carrusel{
             height: 200px;
+        }
+        .table .th .td{
+            padding: 5px, !important;
         }
         }
 @media only screen and (max-width:302px){
