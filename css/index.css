@@ -185,7 +185,6 @@ h3 {
   display: none;
 }
 
-/* Quines Somos se utiliza boostrap */
 .rostro1 {
   background-image: url(../img/testimonio1.jpg);
   background-color: white;
@@ -240,7 +239,7 @@ h3 {
   height: 100%;
 }
 
-/* Talleres se aplica boostrap a las tablas*/
+/* TALLERES  se aplica boostrap a las tablas*/
 .tablaTalleres {
   display: flex;
   justify-content: center;
@@ -263,7 +262,7 @@ table {
   height: 50%;
   width: 100%;
   background-color: white;
-  text-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
+  text-shadow: 7px 4px 5px rgba(0, 0, 0, 0.409);
 }
 table th, table td {
   border: solid 2px;
@@ -352,6 +351,29 @@ footer .fa-brands {
 @media only screen and (max-width: 984px) {
   .carrusel {
     height: 500px;
+  }
+}
+@media only screen and (max-width: 772px) {
+  h1 {
+    font-size: 50px;
+  }
+  .carrusel {
+    height: 400px;
+  }
+  .cursoTalleres {
+    font-size: 15px;
+    padding: 0;
+    margin: 0, auto;
+    width: 100%;
+  }
+  .tablaDuracionOculta {
+    display: none;
+  }
+  table th, td {
+    padding: 5px;
+  }
+  .menuPaginaTalleres {
+    position: absolute;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -488,29 +510,6 @@ footer .fa-brands {
     color: white;
     text-shadow: 4px 4px 5px black;
     box-shadow: none;
-  }
-}
-@media only screen and (max-width: 772px) {
-  h1 {
-    font-size: 50px;
-  }
-  .carrusel {
-    height: 400px;
-  }
-  .cursoTalleres {
-    font-size: 15px;
-    padding: 0;
-    margin: 0, auto;
-    width: 100%;
-  }
-  .tablaDuracionOculta {
-    display: none;
-  }
-  table th, td {
-    padding: 5px;
-  }
-  .menuPaginaTalleres {
-    position: absolute;
   }
 }
 @media only screen and (max-width: 400px) {

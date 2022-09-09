@@ -39,7 +39,6 @@ nav{
         background-color:$colorweb1 ;
     }
 }
-
 //fin de cabezera y menu
 
 /* Titulos */
@@ -56,7 +55,6 @@ h1{
     text-align: center;
     margin-top: 40px;
 }
-
 h1:hover{
     color:rgba(137, 137, 247, 0.451) ;
     text-shadow: 3px 3px 4px black;
@@ -89,7 +87,7 @@ h3{
 
 //fin de titulos usados en la web h1 h2 h3
 
-// INDEX //SE AGREGA UN CONTAINER 
+// PAGINA PRINCIPAL UTILIZANDO GRIDS,
 
 .textoSubtitulo {
     background-color: #eadbebb4;
@@ -100,7 +98,7 @@ h3{
     box-shadow:$boxsombra ;
     text-align: center;
 }
-// Se aplica GRIDS en la galeria, se utiliza boostrap en los testimonios
+// SE UTILIZA MIXIN PARA NO REPETIR CODIGO
 
 .frases{
     width: 100%;
@@ -114,8 +112,6 @@ h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 180%;
     text-align: center;
-
-    //Se aplica otro mixin para evitar repetir mas codigo
 
     @mixin frases {
         display: flex;
@@ -158,6 +154,7 @@ h3{
         color:#0c0909;
         box-shadow:none;
     }
+    // SE OCULTAN PARTES DE LA PAGINA PARA LUEGO LIBERARLAS EN MEDIA QUERY A UNA RESOLUCION MAS PEQUEÑA
     .frase1 p{
         @include fraseoculta();
     }
@@ -169,7 +166,7 @@ h3{
     }
 }
 
-/* Quines Somos se utiliza boostrap */
+// QUINES SOMOS  se utiliza boostrap */
 // Se aplica un mixin a los testimonios
 
 @mixin rostro {
@@ -209,7 +206,7 @@ h3{
     width: 60%;
     height: 100%;
 }
-/* Talleres se aplica boostrap a las tablas*/
+/* TALLERES  se aplica boostrap a las tablas*/
 
 .tablaTalleres{
     display: flex;
@@ -231,7 +228,7 @@ table{
     height: 50%;
     width: 100%;
     background-color: white;
-    text-shadow: 7px 4px 5px rgba(0, 0, 0, 0.644);
+    text-shadow: 7px 4px 5px rgba(0, 0, 0, 0.409);
     th,td{
         border: solid 2px;
         padding:10px;
@@ -255,6 +252,7 @@ table{
 .carrusel{
     height: 800px;
 }
+
 // CONTACTO se utiliza algo de boostrap en los inputs
 
 .formulario{
@@ -280,7 +278,7 @@ table{
 .enviar{
     padding: 10px;
 }
-/* Se agrega Gradiente */ //comienza footer
+/* Se agrega Gradiente */ //comienza footer // se utilizan iconos de fontawesome
 
 footer{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -315,14 +313,36 @@ footer{
 }
 //finaliza footer
 
-//comienzo de media querys
+//COMIENZO DE MEDIA QUERYS DE MAYOR RESOLUCION A MENOR
 
 @media only screen and (max-width:984px){
     .carrusel{
         height: 500px;
     }
 }
-
+@media only screen and (max-width:772px){
+    h1{
+        font-size: 50px;
+    }
+    .carrusel{
+        height: 400px;
+    }
+    .cursoTalleres{
+        font-size: 15px;
+        padding:0;
+        margin: 0, auto;
+        width:100%;
+    }
+    .tablaDuracionOculta{
+        display: none;
+    }
+    table th,td{
+        padding:5px
+    }
+    .menuPaginaTalleres{
+        position:absolute
+    }
+    }
 @media only screen and (max-width:600px) {
     h1{
         display: flex;
@@ -449,85 +469,63 @@ footer{
         box-shadow: none;
     }
 }
-@media only screen and (max-width:772px){
+
+@media only screen and (max-width:400px){
     h1{
         font-size: 50px;
     }
     .carrusel{
-        height: 400px;
+        height: 200px;
     }
-    .cursoTalleres{
-        font-size: 15px;
-        padding:0;
-        margin: 0, auto;
-        width:100%;
+    .table .th .td{
+        padding: 5px, !important;
+    }
+}
+
+@media only screen and (max-width:302px){
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .menuPagina{
+        background-position: center;
+        width:150px;
+        height: 180px;
+        font-size: 120%;
+        text-align: center;
+        margin-top: 1px;
+        align-items: center;
+        margin-right: 50px;
     }
     .tablaDuracionOculta{
         display: none;
     }
-    table th,td{
-        padding:5px
+    th,td{
+        padding:1px;
+        font-size: 10px;
+     }
+    .testimonio1{
+        font-size: 15px;
+        padding: 3px;
     }
-    .menuPaginaTalleres{
-        position:absolute
+    .testimonio2{
+        font-size: 15px;
+        padding: 3px;
+    }
+    .testimonio3{
+        font-size: 15px;
+        padding: 3px;
+    }
+    .containerTestimonio{
+        padding: 3px;
+    }
+    .carrusel{
+        height: 200px;
     }
     }
-    @media only screen and (max-width:400px){
-        h1{
-            font-size: 50px;
-        }
-        .carrusel{
-            height: 200px;
-        }
-        .table .th .td{
-            padding: 5px, !important;
-        }
-        }
-@media only screen and (max-width:302px){
-        h1{
-            font-size: 40px;
-        }
-        h2{
-            font-size: 25px;
-        }
-        h3{
-            font-size: 25px;
-        }
-        .menuPagina{
-            background-position: center;
-            width:150px;
-            height: 180px;
-            font-size: 120%;
-            text-align: center;
-            margin-top: 1px;
-            align-items: center;
-            margin-right: 50px;
-        }
-        .tablaDuracionOculta{
-            display: none;
-        }
-        th,td{
-            padding:1px;
-            font-size: 10px;
-        }
-        .testimonio1{
-            font-size: 15px;
-            padding: 3px;
-        }
-        .testimonio2{
-            font-size: 15px;
-            padding: 3px;
-        }
-        .testimonio3{
-            font-size: 15px;
-            padding: 3px;
-        }
-        .containerTestimonio{
-            padding: 3px;
-        }
-        .carrusel{
-            height: 200px;
-        }
-    }
-
-    //Fin de media querys
+//Fin de media querys
