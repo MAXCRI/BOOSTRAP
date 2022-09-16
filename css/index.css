@@ -231,7 +231,8 @@ h3 {
   height: 500px;
   text-align: center;
   padding-top: 60px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .videoTamaño {
@@ -288,7 +289,12 @@ table thead {
   height: 800px;
 }
 
+.container {
+  margin-bottom: 40px;
+}
+
 .formulario {
+  display: inline-block;
   background-color: rgba(234, 219, 235, 0.7058823529);
   box-shadow: 4px 7px 4px 5px rgba(0, 0, 0, 0.525);
   text-align: center;
@@ -296,9 +302,26 @@ table thead {
   width: 50%;
   padding: 20px;
   margin-bottom: 50px;
+  margin-top: 20px;
   overflow: visible;
   border-radius: 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.formulario div {
+  margin-bottom: 20px;
+  align-items: center;
+}
+.formulario .edadForm {
+  margin-left: 30px;
+}
+
+::placeholder {
+  color: rgba(137, 137, 247, 0.647);
+  text-shadow: 4px 7px 4px 5px rgba(0, 0, 0, 0.525);
+}
+
+.form-control {
+  margin-top: 20px;
 }
 
 .subtitulosFormulario {
@@ -313,6 +336,7 @@ table thead {
 
 .enviar {
   padding: 10px;
+  margin-top: 10px;
 }
 
 /* Se agrega Gradiente */

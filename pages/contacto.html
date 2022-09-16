@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripcion" content="Contactenos para sabar de nosostros y como podemos ayudarte">
+    <meta name="descripción" content="Contáctenos para saber de nosotros y como podemos ayudarte">
     <meta name="keywords" content="contacto, couching, metas, saber de Nosotros, apellido, nombre , alcanzar, consulta, ">
     <title>Contacto - Vuelalto</title>
     <link rel="icon" href="../img/vuela.png">
@@ -35,7 +35,7 @@
                         <a class="btn btn-info" role="button" href="./talleres.html">Talleres</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-info" role="button" href="./galeria.html">Galeria</a>
+                        <a class="btn btn-info" role="button" href="./galeria.html">Galería</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-info" role="button" href="#">Contacto</a>
@@ -47,22 +47,28 @@
     </header>
     <!-- menu con boostratp finaliza el menu-->
     <section>
-        <h2>Contactenos para vivir una experiencia inolvidable !!!</h2>
+        <h2>Contáctenos para vivir una experiencia inolvidable !!!</h2>
         <h3>Favor de ingresar sus datos y que es lo que espera de usted mismo !!!</h3>
         <article class="container-fluid contenedorFormulario">
         <form class="formulario" action="/formulario" method="post">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-            <label for="apellido">Apellido</label>
-            <input type="text" id="Apellido" name="apellido" placeholder="Apellido">
-            <label for="Edad"> Edad</label>
-            <input type="number" id="edad" name="edad" placeholder="Ingrese su Edad">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="Apellido" name="apellido" placeholder="Apellido">
+            </div>
+            <div>
+                <label for="Edad"> Edad</label>
+                <input class="edadForm" type="number" id="edad" name="edad" placeholder="Ingrese su Edad">
+            </div>
             <div>Ingrese su Sexo</div>
             <div>
                 <input type="radio" name="sexo">Masculino
                 <input type="radio" name="sexo">Femenino
             </div>
-            <div>Pais de Origen</div>
+            <p>Pais de Origen</p>
             <select name="pais" id="pais">
                 <option value="Argentina">Argentina</option>
                 <option value="Brasil">Brasil</option>
@@ -76,7 +82,7 @@
     </section>
     <footer>
         <div class="piedePaginaRedes">
-            <p>Siguenos en nuestas redes para mas informacion</p>
+            <p>Síguenos en nuestras redes para mas información</p>
             <a href="http:\\facebook.com"><i class="fa-brands fa-facebook"></i></a>
             <a href="http:\\instagram.com"><i class="fa-brands fa-instagram"></i></a>
             <a href="http:\\twiter.com"><i class="fa-brands fa-twitter"></i></a>
